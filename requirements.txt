@@ -1,6 +1,6 @@
 streamlit
 Pillow
 pandas
-matplotlib.pyplot
+matplotlib
 numpy
 prophet
