@@ -18,7 +18,7 @@ string = st.sidebar.selectbox(
 )
 
 year_range = st.sidebar.slider( #tuple
-    "Select a range of years",
+    "Select a input range of years",
     min_value=2015,
     max_value=2018,
     value=(2015, 2018),
