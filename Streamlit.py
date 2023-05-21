@@ -48,4 +48,6 @@ m.fit(input_df)
 future = m.make_future_dataframe(periods=pred_y*365)
 forecast = m.predict(future)
 
-st.pyplot(m.plot(forecast))
+fig = m.plot(forecast, xlabel='Order Date', ylabel='Sales')
+st.title(string)
+st.pyplot(fig)
