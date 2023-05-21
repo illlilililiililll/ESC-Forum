@@ -11,7 +11,7 @@ df = pd.read_csv('Supermart_Grocery_Sales.csv')
 df['Order Date'] = pd.to_datetime(df['Order Date'])
 
 st.image(img, width=300)
-category = list(set(df['Sub Category'].values.tolist()))
+category = sorted(list(set(df['Sub Category'].values.tolist())))
 string = st.sidebar.selectbox(
     '확인하고 싶은 카테고리를 선택하세요',
     category
